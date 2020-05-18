@@ -2406,9 +2406,7 @@ const converters = {
         convert: (model, msg, publish, options, meta) => {
             const buttonStates = {
                 0: 'off',
-                1: 'single',
-                2: 'double',
-                3: 'hold',
+                1: 'on',
             };
 
             return {action: buttonStates[msg.data.zonestatus]};
